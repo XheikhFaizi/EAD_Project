@@ -1,6 +1,9 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using NET_QR.Models;
 using System.Diagnostics;
+using IronBarCode;
+
+using System.Drawing;
 
 namespace NET_QR.Controllers
 {
@@ -9,9 +12,24 @@ namespace NET_QR.Controllers
 
         List<User> userslist = new List<User>();
 
-        public ActionResult createurlqr(GenerateQr ss)
+        public ActionResult createurlqr(GenerateQr data)
         {
 
+            GeneratedBarcode barcode = QRCodeWriter.CreateQrCode(data.URL, 300);
+
+            //barcode.AddBarcodeValueTextBelowBarcode();
+            // Styling a QR code and adding annotation text
+            barcode.SetMargins(10);
+
+
+            string filePath = Path.Combine("GeneratedQRCode/UrlQrCode.png");
+            barcode.SaveAsPng(filePath);
+            string fileName = Path.GetFileName(filePath);
+
+            //string imageUrl = $ "{this.Request.Scheme}://{this.Request.Host}{this.Request.PathBase}" + "/GeneratedQRCode/" + fileName;
+            //ViewBag.QrCodeUri = imageUrl;
+
+            @ViewBag.Foto = "/images/GeneratedQr/UrlQrCode.png";
 
             return ViewComponent("UrlQr");
 

@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "YuPQho/N//f1F62kmRaScl0V3RrTYRe5IQCOC68AcVAk9gWKuE1wzS+tJ9AImSjVv3sw5mi30dFjIjySku+GdQ==",
+  "dgSpecHash": "PSfy3lSTYsz9XBoVs15yUb8QdhK5kwGSfWf/lUeCmZ3WxaPjn6a7cbLgZPaiMdT0eES6xYrbtBwnP+brD58dsQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\long play computers\\source\\repos\\NET_QR\\NET_QR\\NET_QR.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\long play computers\\.nuget\\packages\\barcode\\2022.8.8024\\barcode.2022.8.8024.nupkg.sha512",
     "C:\\Users\\long play computers\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\long play computers\\.nuget\\packages\\messagepack\\2.1.152\\messagepack.2.1.152.nupkg.sha512",
     "C:\\Users\\long play computers\\.nuget\\packages\\messagepack.annotations\\2.1.152\\messagepack.annotations.2.1.152.nupkg.sha512",

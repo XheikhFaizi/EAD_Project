@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v6.0": {
       "NET_QR/1.0.0": {
         "dependencies": {
+          "BarCode": "2022.8.8024",
           "Microsoft.EntityFrameworkCore": "6.0.8",
           "Microsoft.EntityFrameworkCore.Design": "6.0.8",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.8",
@@ -18,6 +19,17 @@
         },
         "runtime": {
           "NET_QR.dll": {}
+        }
+      },
+      "BarCode/2022.8.8024": {
+        "dependencies": {
+          "System.Drawing.Common": "6.0.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/IronBarCode.dll": {
+            "assemblyVersion": "2022.8.0.8024",
+            "fileVersion": "2022.8.0.8024"
+          }
         }
       },
       "Humanizer.Core/2.8.26": {
@@ -2266,6 +2278,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "BarCode/2022.8.8024": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-i0hUc150FUQrKvTPjFm2omPwqDNToJQqXV/xKfvV2WRipckGCukTHlhQW2CyhVA/lTCtUU1kEOl/IMZ6/N/qiw==",
+      "path": "barcode/2022.8.8024",
+      "hashPath": "barcode.2022.8.8024.nupkg.sha512"
     },
     "Humanizer.Core/2.8.26": {
       "type": "package",
