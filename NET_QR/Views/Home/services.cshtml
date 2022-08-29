@@ -1,0 +1,329 @@
+﻿@{
+    ViewBag.Title = "About US";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+}
+
+     <main id="main">
+
+
+
+
+
+<h2 style="margin-top:120px;
+    margin-bottom:30px;
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 56px;
+    text-align: center;
+    color: #4e4039;">Get Your Custom QR Code</h2>
+<div class="warpper">
+
+  <input class="radio" id="one" name="group" type="radio" >
+  <input class="radio" id="two" name="group" type="radio">
+  <input class="radio" id="three" name="group" type="radio">
+  <input class="radio" id="four" name="group" type="radio" checked>
+  <input class="radio" id="five" name="group" type="radio">
+  <input class="radio" id="six" name="group" type="radio">
+   <input class="radio" id="seven" name="group" type="radio">
+ 
+  <div class="tabs">
+
+  <label class="tab" id="one-tab" for="one">URL</label>
+  <label class="tab" id="two-tab" for="two">Plain_Text</label>
+  <label class="tab" id="three-tab" for="three">Bitcoin</label>
+  <label class="tab" id="four-tab" for="four">WIFI</label>
+  <label class="tab" id="five-tab" for="five">SMS</label>
+  <label class="tab" id="six-tab" for="six">Email</label>
+  <label class="tab" id="seven-tab" for="seven">Social</label>
+    </div>
+
+
+  <div class="panels">
+
+
+
+  <div class="panel" id="one-panel">
+        <br><br>
+    <div class="panel-title">Create URL to QR Code </div>
+      <br>
+
+   <form action="#">
+  <input type="text" name="url" class="form-control" id="url" placeholder="Enter Your Website" required>
+  <br>
+  <input class="btn-get-started scrollto" id = "sbtn" type="submit">
+</form>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="panel" id="two-panel">
+         <br><br>
+    <div class="panel-title">Create Plain Text to QR </div>
+      <br>
+
+   <form action="#">
+       <textarea class="form-control" name="message" rows="10" placeholder="Enter Your Text" required></textarea>
+  <br>
+  <input class="btn-get-started scrollto"  id = "sbtn"  type="submit">
+</form>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+  <div class="panel" id="three-panel">
+         <br><br>
+    <div class="panel-title">Create QR for Crypto Payments </div>
+      <br>
+
+    <form action="#">
+
+
+    <div class="select">
+        <select id="standard-select">
+            <option value="btc" selected>Select          </option>
+            <option value="btc">BitCoin          </option>
+            <option value="ether">Ethereum          </option>
+            <option value="bnb">BNB          </option>
+
+        </select>
+    </div>
+    <br>
+    
+  <input type="text" name="acc" class="form-control" id="acc" placeholder="Enter Reciever Account" required>
+  <br>
+  <input type="number" class="form-control" id="quantity" name="quantity" min="1" max="5"  placeholder="Enter Amount" required>
+  <br />
+  <input class="btn-get-started scrollto" id = "sbtn"  type="submit">
+
+    </form>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+  <div class="panel" id="four-panel">
+         <br><br>
+    <div class="panel-title">Create Qr to Connect To Wifi </div>
+      <br>
+
+   <form action="#">
+         <input type="text" name="network" class="form-control" id="network" placeholder="Enter Network Name" required>
+  <br>
+           <input type="text" name="pass" class="form-control" id="pass" placeholder="Enter Password" required>
+  <br />
+
+      <div class="select">
+        <select id="standard-select">
+            <option value="wpa/wpa2" selected>WPA/WPA2          </option>
+            <option value="wep">WEP         </option>
+            <option value="nonw">None          </option>
+
+        </select>
+        <br />
+        </div>
+
+
+
+  <input class="btn-get-started scrollto" id = "sbtn"  type="submit">
+</form>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+  <div class="panel" id="five-panel">
+         <br><br>
+    <div class="panel-title">Create Qr to Send Sms </div>
+      <br>
+
+   <form action="#">
+         
+  <input type="number" class="form-control" id="num" name="num"   placeholder="Enter Number" required>
+  <br>
+         <textarea class="form-control" name="message" rows="5" placeholder="Enter Your Text here" required></textarea>
+
+         <br />
+         
+
+  <input class="btn-get-started scrollto" id = "sbtn"  type="submit">
+</form>
+</div> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+  <div class="panel" id="six-panel">
+         <br><br>
+    <div class="panel-title">Create Qr to Send EMAIL </div>
+      <br>
+
+   <form action="#">
+         
+  <input type="email" class="form-control" id="mail" name="mail"   placeholder="Your Email" required>
+  <br>
+  
+  <input type="text" class="form-control" id="subject" name="subect"   placeholder="Enter Email Subject" required>
+  <br />
+         <textarea class="form-control" name="message" rows="5" placeholder="Enter Your Message here" required></textarea>
+
+         <br />
+         
+
+  <input class="btn-get-started scrollto" id = "sbtn"  type="submit">
+</form>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <div class="panel" id="seven-panel">
+        <br><br>
+    <div class="panel-title">Create QR code for Social Accounts </div>
+      <br>
+
+   <form action="#">
+  <input type="text" name="url" class="form-control" id="url" placeholder="Enter Your Profile Link" required>
+  <br>
+  <input class="btn-get-started scrollto"  id = "sbtn" type="submit">
+</form>
+
+</div>
+
+</div>
+</div>
+
+
+<!-- $$$$$$$$$$$$$$$$$$$ TIMELINE $$$$$$$$$$$$$$$$$$$-->
+ <section id="services" class="services ">
+   <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>How To Use</h2>
+          <p>Check out these steps to create your own custom QR</p>
+        </div>
+
+   <div class="timeline">
+		
+	    <div class="timeline-row">
+			<div class="timeline-time">
+                STEP 1
+                <small style="color:black;">Choose which one you want to create</small>
+			</div>
+
+			<div class="timeline-content">
+				<img src="/images/step1.gif" width="350px"/>
+			</div>
+		</div>
+
+
+		<div class="timeline-row">
+            <div class="timeline-time">
+                STEP 2
+                <small style="color:black;">Add your data you wana add</small>
+			</div>
+			<div class="timeline-content">
+			<img src="/images/step2.gif" width="350px"/>
+			</div>
+		</div>
+
+       
+	    <div class="timeline-row">
+			<div class="timeline-time">
+                STEP 3
+                <small style="color:black;">Click and download your Qr</small>
+			</div>
+
+			<div class="timeline-content">
+				<img src="/images/step3.gif" width="350px"/>
+			</div>
+		</div>
+
+	</div>
+</div>
+
+</section>
+
+<!-- $$$$$$$$$$$$$$$$$$$ TIMELINE $$$$$$$$$$$$$$$$$$$-->
+
+</main>
