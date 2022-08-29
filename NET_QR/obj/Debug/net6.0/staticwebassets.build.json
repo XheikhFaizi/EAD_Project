@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "YKgq7iIRTyvtKruF7jC1OYcm9TKLzawbpN2fFYJ6TiU=",
+  "Hash": "J8L80kzUJR3Gkzi1HYywd2GUHy+DEjyz5UF/ySITTTM=",
   "Source": "NET_QR",
   "BasePath": "_content/NET_QR",
   "Mode": "Default",
@@ -746,23 +746,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\white-logo.png"
-    },
-    {
-      "Identity": "C:\\Users\\long play computers\\source\\repos\\NET_QR\\NET_QR\\wwwroot\\js\\java.js",
-      "SourceId": "NET_QR",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\long play computers\\source\\repos\\NET_QR\\NET_QR\\wwwroot\\",
-      "BasePath": "_content/NET_QR",
-      "RelativePath": "js/java.js",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\js\\java.js"
     },
     {
       "Identity": "C:\\Users\\long play computers\\source\\repos\\NET_QR\\NET_QR\\wwwroot\\js\\site.js",

@@ -8,6 +8,20 @@ namespace NET_QR.Controllers
     {
 
         List<User> userslist = new List<User>();
+
+        public ActionResult createurlqr(GenerateQr ss)
+        {
+
+
+            return ViewComponent("UrlQr");
+
+        }
+
+
+
+
+
+
         //private void FetchData()
         //{
 
