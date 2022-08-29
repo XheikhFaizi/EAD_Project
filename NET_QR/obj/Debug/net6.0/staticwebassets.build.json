@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "mf+bTULU/7AixW/0XPtKh3rGCmzQVXgwArbYo//2c0o=",
+  "Hash": "5ZEtOxQ/uupJTzLMqwhoW6vanehKKqcFA2/NJjyj2pw=",
   "Source": "NET_QR",
   "BasePath": "_content/NET_QR",
   "Mode": "Default",
@@ -83,6 +83,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\long play computers\\source\\repos\\NET_QR\\NET_QR\\wwwroot\\GeneratedQrs\\UrlQrCode.png",
+      "SourceId": "NET_QR",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\long play computers\\source\\repos\\NET_QR\\NET_QR\\wwwroot\\",
+      "BasePath": "_content/NET_QR",
+      "RelativePath": "GeneratedQrs/UrlQrCode.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\GeneratedQrs\\UrlQrCode.png"
     },
     {
       "Identity": "C:\\Users\\long play computers\\source\\repos\\NET_QR\\NET_QR\\wwwroot\\images\\about-bg.jpg",

@@ -31,9 +31,10 @@ function createurl(obj)
         url: "/Home/createurlqr",
         data: obj,
         contentType: 'application/x-www-form-urlencoded; charset=UTF-8',
-        success: function (response)
+        success: function (data)
         {
-            alert("asdasdasdasd asjhasdjhasdjh")
+            alert(data)
+            $("#one-panel").html(data)
         }
 
     });

@@ -2,6 +2,9 @@
 using NET_QR.Models;
 using System.Diagnostics;
 using IronBarCode;
+using System.IO;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
 
 using System.Drawing;
 
@@ -9,11 +12,17 @@ namespace NET_QR.Controllers
 {
     public class HomeController : Controller
     {
-
-        List<User> userslist = new List<User>();
+        private IWebHostEnvironment Environment;
+        public HomeController(IWebHostEnvironment _environment)
+        {
+           
+            Environment = _environment;
+        }
+    List<User> userslist = new List<User>();
 
         public ActionResult createurlqr(GenerateQr data)
         {
+            string wwwPath = this.Environment.WebRootPath;
 
             GeneratedBarcode barcode = QRCodeWriter.CreateQrCode(data.URL, 300);
 
@@ -21,15 +30,20 @@ namespace NET_QR.Controllers
             // Styling a QR code and adding annotation text
             barcode.SetMargins(10);
 
+            string path = Path.Combine(this.Environment.WebRootPath, "GeneratedQrs");
+            if (!Directory.Exists(path))
+            {
+                Directory.CreateDirectory(path);
+            }
 
-            string filePath = Path.Combine("GeneratedQRCode/UrlQrCode.png");
+            string filePath = Path.Combine(path, "UrlQrCode.png");
             barcode.SaveAsPng(filePath);
             string fileName = Path.GetFileName(filePath);
 
             //string imageUrl = $ "{this.Request.Scheme}://{this.Request.Host}{this.Request.PathBase}" + "/GeneratedQRCode/" + fileName;
             //ViewBag.QrCodeUri = imageUrl;
 
-            @ViewBag.Foto = "/images/GeneratedQr/UrlQrCode.png";
+            ViewBag.Qr = "/GeneratedQrs/UrlQrCode.png";
 
             return ViewComponent("UrlQr");
 
