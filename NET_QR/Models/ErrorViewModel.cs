@@ -1,3 +1,5 @@
+
+
 namespace NET_QR.Models
 {
     public class ErrorViewModel
@@ -7,3 +9,6 @@ namespace NET_QR.Models
         public bool ShowRequestId => !string.IsNullOrEmpty(RequestId);
     }
 }
+
+
+

@@ -1,11 +1,33 @@
-﻿  <div class="panel" id="two-panel">
-         <br><br>
+﻿
+
+
+   <div class="panel" id="two-panel">
+
+@if (ViewBag.Qr != null)
+{
+    <br><br>
+    <div class="panel-title">Click on QR to Download </div>
+    <br>
+    <a href="@ViewBag.Qr"  download>
+        <img src="@ViewBag.Qr" class="img-fluid animated"  width="300px" style="margin-left: 100px;" ></a>
+     <br>   <br>
+
+     <a href="@Url.Action("services","Home")">
+
+    <button class="btn-get-started scrollto" id = "sbtn" > Use Again</button>
+         </a>
+
+}
+else
+{
+
+
     <div class="panel-title">Create Plain Text to QR </div>
       <br>
-
-   <form action="#">
-       <textarea class="form-control" name="message" rows="10" placeholder="Enter Your Text" required></textarea>
+  <form id="textform">
+       <textarea class="form-control" name="TEXT" rows="10" id="TEXT" placeholder="Enter Your Text" required></textarea>
   <br>
   <input class="btn-get-started scrollto"  id = "sbtn"  type="submit">
 </form>
+}
 </div>

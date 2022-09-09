@@ -1,0 +1,479 @@
+﻿++Solution 'NET_QR' ‎(1 of 1 project)
+i:{00000000-0000-0000-0000-000000000000}:NET_QR.sln
+++NET_QR
+i:{00000000-0000-0000-0000-000000000000}:NET_QR
+++Connected Services 
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:>1129
+++Dependencies
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:>1128
+++Properties
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\properties\
+++wwwroot
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\wwwroot\
+++css
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\wwwroot\css\
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\wwwroot\lib\bootstrap\css\
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\wwwroot\lib\bootstrap\dist\css\
+++site.css
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\wwwroot\css\site.css
+++GeneratedQrs
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\wwwroot\generatedqrs\
+++images
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\wwwroot\images\
+++js
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\wwwroot\js\
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\wwwroot\lib\bootstrap\dist\js\
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\wwwroot\lib\bootstrap\js\
+++site.js
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\wwwroot\js\site.js
+++lib
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\wwwroot\lib\
+++bootstrap
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\wwwroot\lib\bootstrap\
+++bootstrap.bundle.min.js
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\wwwroot\lib\bootstrap\css\bootstrap.bundle.min.js
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\wwwroot\lib\bootstrap\js\bootstrap.bundle.min.js
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js
+++bootstrap.min.css
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\wwwroot\lib\bootstrap\css\bootstrap.min.css
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css
+++bootstrap-icons.css
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\wwwroot\lib\bootstrap\css\bootstrap-icons.css
+++bootstrap-icons.json
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\wwwroot\lib\bootstrap\css\bootstrap-icons.json
+++index.html
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\wwwroot\lib\bootstrap\css\index.html
+++dist
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\wwwroot\lib\bootstrap\dist\
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\wwwroot\lib\jquery\dist\
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\wwwroot\lib\jquery-validation\dist\
+++bootstrap.min.js
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\wwwroot\lib\bootstrap\js\bootstrap.min.js
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\wwwroot\lib\bootstrap\dist\js\bootstrap.min.js
+++LICENSE
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\wwwroot\lib\bootstrap\license
+++jquery
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\wwwroot\lib\jquery\
+++jquery.js
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\wwwroot\lib\jquery\dist\jquery.js
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\wwwroot\lib\jquery\jquery.js
+++LICENSE.txt
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\wwwroot\lib\jquery\license.txt
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\wwwroot\lib\jquery-validation-unobtrusive\license.txt
+++jquery-validation
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\wwwroot\lib\jquery-validation\
+++additional-methods.js
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\wwwroot\lib\jquery-validation\dist\additional-methods.js
+++jquery.validate.js
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\wwwroot\lib\jquery-validation\dist\jquery.validate.js
+++LICENSE.md
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\wwwroot\lib\jquery-validation\license.md
+++jquery-validation-unobtrusive
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\wwwroot\lib\jquery-validation-unobtrusive\
+++jquery.validate.unobtrusive.js
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js
+++favicon.ico
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\wwwroot\favicon.ico
+++Controllers
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\controllers\
+++HomeController.cs
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\controllers\homecontroller.cs
+++UsersController.cs
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\controllers\userscontroller.cs
+++Data
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\data\
+++NET_QRContext.cs
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\data\net_qrcontext.cs
+++Migrations
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\migrations\
+++20220829085853_qr.cs
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\migrations\20220829085853_qr.cs
+++NET_QRContextModelSnapshot.cs
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\migrations\net_qrcontextmodelsnapshot.cs
+++Models
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\models\
+++Interface
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\models\interface\
+++InterfaceUser.cs
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\models\interface\interfaceuser.cs
+++Repositry
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\models\repositry\
+++ImageRepo.cs
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\models\repositry\imagerepo.cs
+++UserRepositry.cs
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\models\repositry\userrepositry.cs
+++ErrorViewModel.cs
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\models\errorviewmodel.cs
+++GenerateQr.cs
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\models\generateqr.cs
+++Imagepath.cs
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\models\imagepath.cs
+++User.cs
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\models\user.cs
+++ViewComponenets
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\viewcomponenets\
+++BitcoinQr.cs
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\viewcomponenets\bitcoinqr.cs
+++EmailQr.cs
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\viewcomponenets\emailqr.cs
+++SmsQr.cs
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\viewcomponenets\smsqr.cs
+++SocialQr.cs
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\viewcomponenets\socialqr.cs
+++TextQr.cs
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\viewcomponenets\textqr.cs
+++UrlQr.cs
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\viewcomponenets\urlqr.cs
+++WifiQr.cs
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\viewcomponenets\wifiqr.cs
+++Views
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\views\
+++Home
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\views\home\
+++about.cshtml
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\views\home\about.cshtml
+++contact.cshtml
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\views\home\contact.cshtml
+++Index.cshtml
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\views\home\index.cshtml
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\views\users\index.cshtml
+++Null.cshtml
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\views\home\null.cshtml
+++pricing.cshtml
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\views\home\pricing.cshtml
+++Privacy.cshtml
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\views\home\privacy.cshtml
+++services.cshtml
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\views\home\services.cshtml
+++Shared
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\views\shared\
+++Components
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\views\shared\components\
+++BitcoinQr
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\views\shared\components\bitcoinqr\
+++Default.cshtml
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\views\shared\components\bitcoinqr\default.cshtml
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\views\shared\components\emailqr\default.cshtml
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\views\shared\components\smsqr\default.cshtml
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\views\shared\components\socialqr\default.cshtml
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\views\shared\components\textqr\default.cshtml
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\views\shared\components\urlqr\default.cshtml
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\views\shared\components\wifiqr\default.cshtml
+++EmailQr
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\views\shared\components\emailqr\
+++SmsQr
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\views\shared\components\smsqr\
+++SocialQr
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\views\shared\components\socialqr\
+++TextQr
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\views\shared\components\textqr\
+++UrlQr
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\views\shared\components\urlqr\
+++WifiQr
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\views\shared\components\wifiqr\
+++_Layout.cshtml
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\views\shared\_layout.cshtml
+++_NewsLetter.cshtml
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\views\shared\_newsletter.cshtml
+++_ValidationScriptsPartial.cshtml
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\views\shared\_validationscriptspartial.cshtml
+++Error.cshtml
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\views\shared\error.cshtml
+++Users
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\views\users\
+++Create.cshtml
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\views\users\create.cshtml
+++Delete.cshtml
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\views\users\delete.cshtml
+++Details.cshtml
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\views\users\details.cshtml
+++Edit.cshtml
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\views\users\edit.cshtml
+++login.cshtml
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\views\users\login.cshtml
+++signup.cshtml
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\views\users\signup.cshtml
+++_ViewImports.cshtml
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\views\_viewimports.cshtml
+++_ViewStart.cshtml
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\views\_viewstart.cshtml
+++appsettings.json
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\appsettings.json
+++libman.json
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\libman.json
+++Program.cs
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\program.cs
+++SQL Server Express LocalDB (Local) (ConnectionStrings:NET_QRContext)
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:>1159
+++Analyzers
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:analyzers
+++Frameworks
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:frameworks
+++Packages
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:packages
+++launchSettings.json
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\properties\launchsettings.json
+++serviceDependencies.json
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\properties\servicedependencies.json
+++UrlQrCode.png
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\wwwroot\generatedqrs\urlqrcode.png
+++GeneratedQr
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\wwwroot\images\generatedqr\
+++about-bg.jpg
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\wwwroot\images\about-bg.jpg
+++about-right-dec.png
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\wwwroot\images\about-right-dec.png
+++client-bg.png
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\wwwroot\images\client-bg.png
+++client-image.jpg
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\wwwroot\images\client-image.jpg
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\wwwroot\images\generatedqr\client-image.jpg
+++default-logo.png
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\wwwroot\images\default-logo.png
+++footer-bg.png
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\wwwroot\images\footer-bg.png
+++hand-qrcodes.png
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\wwwroot\images\hand-qrcodes.png
+++heading-line-dec.png
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\wwwroot\images\heading-line-dec.png
+++logo.png
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\wwwroot\images\logo.png
+++lop.png
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\wwwroot\images\lop.png
+++ok1.jpg
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\wwwroot\images\ok1.jpg
+++ok2.jpg
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\wwwroot\images\ok2.jpg
+++pop.jpg
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\wwwroot\images\pop.jpg
+++pricing-table-01.png
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\wwwroot\images\pricing-table-01.png
+++pricing-table-02.png
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\wwwroot\images\pricing-table-02.png
+++pro-table-bottom.png
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\wwwroot\images\pro-table-bottom.png
+++pro-table-top.png
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\wwwroot\images\pro-table-top.png
+++qrab.png
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\wwwroot\images\qrab.png
+++quote.png
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\wwwroot\images\quote.png
+++regular-table-bottom.png
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\wwwroot\images\regular-table-bottom.png
+++regular-table-top.png
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\wwwroot\images\regular-table-top.png
+++service-bg.jpg
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\wwwroot\images\service-bg.jpg
+++service-icon-01.png
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\wwwroot\images\service-icon-01.png
+++service-icon-02.png
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\wwwroot\images\service-icon-02.png
+++service-icon-03.png
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\wwwroot\images\service-icon-03.png
+++service-icon-04.png
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\wwwroot\images\service-icon-04.png
+++service-icon-hover-01.png
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\wwwroot\images\service-icon-hover-01.png
+++service-icon-hover-02.png
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\wwwroot\images\service-icon-hover-02.png
+++service-icon-hover-03.png
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\wwwroot\images\service-icon-hover-03.png
+++service-icon-hover-04.png
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\wwwroot\images\service-icon-hover-04.png
+++services-left-dec.png
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\wwwroot\images\services-left-dec.png
+++services-right-dec.png
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\wwwroot\images\services-right-dec.png
+++slider-dec.png
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\wwwroot\images\slider-dec.png
+++slider-left-dec.png
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\wwwroot\images\slider-left-dec.png
+++step1.gif
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\wwwroot\images\step1.gif
+++step2.gif
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\wwwroot\images\step2.gif
+++step3.gif
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\wwwroot\images\step3.gif
+++subscribe.gif
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\wwwroot\images\subscribe.gif
+++vc.jpg
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\wwwroot\images\vc.jpg
+++white-logo.png
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\wwwroot\images\white-logo.png
+++bootstrap.min.css.map
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\wwwroot\lib\bootstrap\css\bootstrap.min.css.map
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map
+++bootstrap.css
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\wwwroot\lib\bootstrap\dist\css\bootstrap.css
+++bootstrap-grid.css
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
+++bootstrap-reboot.css
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css
+++bootstrap-utilities.css
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.css
+++bootstrap.js
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\wwwroot\lib\bootstrap\dist\js\bootstrap.js
+++bootstrap.bundle.min.js.map
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\wwwroot\lib\bootstrap\js\bootstrap.bundle.min.js.map
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js.map
+++jquery.min.js
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\wwwroot\lib\jquery\dist\jquery.min.js
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\wwwroot\lib\jquery\jquery.min.js
+++jquery.slim.js
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\wwwroot\lib\jquery\jquery.slim.js
+++additional-methods.min.js
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\wwwroot\lib\jquery-validation\dist\additional-methods.min.js
+++jquery.validate.min.js
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\wwwroot\lib\jquery-validation\dist\jquery.validate.min.js
+++jquery.validate.unobtrusive.min.js
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.min.js
+++20220829085853_qr.Designer.cs
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\migrations\20220829085853_qr.designer.cs
+++_Layout.cshtml.css
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\views\shared\_layout.cshtml.css
+++appsettings.Development.json
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\appsettings.development.json
+++MessagePackAnalyzer
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\.nuget\packages\messagepackanalyzer\2.1.152\analyzers\dotnet\messagepackanalyzer.dll
+++Microsoft.AspNetCore.Analyzers
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.analyzers.dll
+++Microsoft.AspNetCore.App.Analyzers
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.2\analyzers\dotnet\cs\microsoft.aspnetcore.app.analyzers.dll
+++Microsoft.AspNetCore.App.CodeFixes
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.2\analyzers\dotnet\cs\microsoft.aspnetcore.app.codefixes.dll
+++Microsoft.AspNetCore.Components.Analyzers
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.components.analyzers.dll
+++Microsoft.AspNetCore.Mvc.Analyzers
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.mvc.analyzers.dll
+++Microsoft.AspNetCore.Razor.SourceGenerator.Tooling.Internal
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk.razor\source-generators\microsoft.aspnetcore.razor.sourcegenerator.tooling.internal.dll
+++Microsoft.CodeAnalysis.Analyzers
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\.nuget\packages\microsoft.codeanalysis.analyzers\3.3.2\analyzers\dotnet\cs\microsoft.codeanalysis.analyzers.dll
+++Microsoft.CodeAnalysis.CSharp.Analyzers
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\.nuget\packages\microsoft.codeanalysis.analyzers\3.3.2\analyzers\dotnet\cs\microsoft.codeanalysis.csharp.analyzers.dll
+++Microsoft.CodeAnalysis.CSharp.NetAnalyzers
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.csharp.netanalyzers.dll
+++Microsoft.CodeAnalysis.NetAnalyzers
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.netanalyzers.dll
+++Microsoft.EntityFrameworkCore.Analyzers
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\.nuget\packages\microsoft.entityframeworkcore.analyzers\6.0.8\analyzers\dotnet\cs\microsoft.entityframeworkcore.analyzers.dll
+++Microsoft.Extensions.Logging.Generators
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.2\analyzers\dotnet\roslyn4.0\cs\microsoft.extensions.logging.generators.dll
+++Microsoft.NET.Sdk.Razor.SourceGenerators
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk.razor\source-generators\microsoft.net.sdk.razor.sourcegenerators.dll
+++System.Text.Json.SourceGeneration
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\program files\dotnet\packs\microsoft.netcore.app.ref\6.0.2\analyzers\dotnet\cs\system.text.json.sourcegeneration.dll
+++Microsoft.AspNetCore.App
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\microsoft.aspnetcore.app
+++Microsoft.NETCore.App
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\microsoft.netcore.app
+++BarCode (2022.8.8024)
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:>1155
+++Microsoft.EntityFrameworkCore (6.0.8)
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:>1151
+++Microsoft.EntityFrameworkCore.Design (6.0.8)
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:>1153
+++Microsoft.EntityFrameworkCore.SqlServer (6.0.8)
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:>1152
+++Microsoft.EntityFrameworkCore.Tools (6.0.8)
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:>1156
+++Microsoft.VisualStudio.Web.CodeGeneration (6.0.8)
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:>1158
+++Microsoft.VisualStudio.Web.CodeGeneration.Design (6.0.8)
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:>1157
+++Swashbuckle.AspNetCore (6.3.0)
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:>1154
+++serviceDependencies.local.json
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\properties\servicedependencies.local.json
+++bootstrap.css.map
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\wwwroot\lib\bootstrap\dist\css\bootstrap.css.map
+++bootstrap.rtl.css
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css
+++bootstrap-grid.css.map
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map
+++bootstrap-grid.min.css
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css
+++bootstrap-grid.rtl.css
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.css
+++bootstrap-reboot.css.map
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css.map
+++bootstrap-reboot.min.css
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css
+++bootstrap-reboot.rtl.css
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css
+++bootstrap-utilities.css.map
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.css.map
+++bootstrap-utilities.min.css
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.min.css
+++bootstrap-utilities.rtl.css
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css
+++bootstrap.bundle.js
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js
+++bootstrap.esm.js
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js
+++bootstrap.js.map
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\wwwroot\lib\bootstrap\dist\js\bootstrap.js.map
+++jquery.min.map
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\wwwroot\lib\jquery\dist\jquery.min.map
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\wwwroot\lib\jquery\jquery.min.map
+++jquery.slim.min.js
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\wwwroot\lib\jquery\jquery.slim.min.js
+++bootstrap.rtl.css.map
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css.map
+++bootstrap.rtl.min.css
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css
+++bootstrap-grid.min.css.map
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css.map
+++bootstrap-grid.rtl.css.map
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.css.map
+++bootstrap-grid.rtl.min.css
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css
+++bootstrap-reboot.min.css.map
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css.map
+++bootstrap-reboot.rtl.css.map
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css.map
+++bootstrap-reboot.rtl.min.css
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css
+++bootstrap-utilities.min.css.map
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.min.css.map
+++bootstrap-utilities.rtl.css.map
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css.map
+++bootstrap-utilities.rtl.min.css
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css
+++bootstrap.bundle.js.map
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js.map
+++bootstrap.esm.js.map
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js.map
+++bootstrap.esm.min.js
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js
+++bootstrap.min.js.map
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\wwwroot\lib\bootstrap\dist\js\bootstrap.min.js.map
+++jquery.slim.min.map
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\wwwroot\lib\jquery\jquery.slim.min.map
+++bootstrap.rtl.min.css.map
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css.map
+++bootstrap-grid.rtl.min.css.map
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css.map
+++bootstrap-reboot.rtl.min.css.map
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css.map
+++bootstrap-utilities.rtl.min.css.map
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css.map
+++bootstrap.esm.min.js.map
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js.map
+++Script Documents
+++VM5
+++aspnetcore-browser-refresh.js
+++browserLink
+++services
+++VM27
+++VM28
+++TextQrCode.png
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\wwwroot\generatedqrs\textqrcode.png
+++WifiQrCode.png
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\wwwroot\generatedqrs\wifiqrcode.png
+++SmsQrCode.png
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\wwwroot\generatedqrs\smsqrcode.png
+++EmailQrCode.png
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\wwwroot\generatedqrs\emailqrcode.png
+++CryptoQrCode.png
+i:{9c6a0324-ca69-4f76-9fca-83e48ba9b759}:c:\users\long play computers\source\repos\net_qr\net_qr\wwwroot\generatedqrs\cryptoqrcode.png

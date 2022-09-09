@@ -1,4 +1,6 @@
-﻿<!DOCTYPE html>
+﻿@inject IHttpContextAccessor httpContextaccessor
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -55,7 +57,25 @@
         <ul>
           <li><a class="nav-link scrollto active" href="@Url.Action("Null","Home")">Home</a></li>
           <li><a class="nav-link scrollto" href="@Url.Action("about","Home")">About Us</a></li>
-          <li><a class="nav-link scrollto" href="@Url.Action("services","Home")">Services</a></li>
+
+
+          @if(httpContextaccessor.HttpContext.Request.Cookies["user"] == null)
+          {          
+             <li><a class="nav-link scrollto" href="@Url.Action("services","Home")">Services</a></li>
+             <li><a class="nav-link scrollto" href="@Url.Action("contact","Home")">Contact</a></li>        
+            <li><a class="getstarted scrollto" href="@Url.Action("login","Users")"><i class="fa fa-sign-in-alt"></i>    Sign In</a></li>
+
+          }
+          else
+          {
+             <li><a class="nav-link scrollto" href="@Url.Action("services","Home")">QR Factory</a></li>
+             
+             <li><a class="nav-link scrollto" href="@Url.Action("services","Home")">Mine Qr</a></li>
+             <li><a class="nav-link scrollto" href="@Url.Action("contact","Home")">Contact</a></li> 
+            <li><a class="getstarted scrollto" href="@Url.Action("login","Users")"><i class="fa fa-sign-in-alt"></i> Sign Out</a></li>
+
+          }
+
           @*<li><a class="nav-link scrollto" href="@Url.Action("pricing","Home")">Pricing</a></li>
           <li class="dropdown"><a href="#"><span>Services</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
@@ -72,9 +92,7 @@
               <li><a href="#">Drop Down 4</a></li>
             </ul>
           </li>*@
-          <li><a class="nav-link scrollto" href="@Url.Action("contact","Home")">Contact</a></li> 
     
-            <li><a class="getstarted scrollto" href="@Url.Action("login","Users")"><i class="fa fa-sign-in-alt"></i>   Sign In Now</a></li>
         </ul>
 
                <i class="fa fa-list mobile-nav-toggle"></i>

@@ -1,22 +1,31 @@
-﻿using System;
+﻿using System.Web;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Authentication.Cookies;
 using NET_QR.Data;
 using NET_QR.Models;
+using Microsoft.AspNetCore.CookiePolicy;
+using Microsoft.AspNetCore.Session;
+using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Http;
+using NET_QR.Models.Interface;
 
 namespace NET_QR.Controllers
 {
     public class UsersController : Controller
     {
         private readonly NET_QRContext _context;
+        private readonly InterfaceUser userrepo;
 
-        public UsersController(NET_QRContext context)
+        public UsersController(NET_QRContext context, InterfaceUser userrepot)
         {
             _context = context;
+            userrepo = userrepot;
         }
 
 
@@ -173,21 +182,32 @@ namespace NET_QR.Controllers
         [HttpPost]
         public ActionResult login(User user)
         {
+            string key = "user";
+            string value = "I am";
 
-            if (ModelState.IsValid)
-            {
+            //if (ModelState.IsValid)
+            //{
+                bool isUserVerified = userrepo.Ifuserexist(user);
 
-                bool isUserVerified = (_context.User?.Any(e => e.email == user.email && e.pass == user.pass)).GetValueOrDefault();
+                Console.WriteLine(isUserVerified);
                 if (isUserVerified)
                 {
+                
+                
+
+
+                    CookieOptions ck = new CookieOptions();
+                    //////ck.Expires = DateTime.Now.AddDays(7);
+                    Response.Cookies.Append(key, value, ck);
+
                     return RedirectToAction("Null", "Home");
                 }
-            }
-            else
-            {
-                ViewBag.Message = "Sorry! You entered wrong credentials";
+            //}
+            //else
+            //{
+            //    ViewBag.Message = "Sorry! You entered wrong credentials";
 
-            }
+            //}
 
             return View();
 
@@ -199,14 +219,15 @@ namespace NET_QR.Controllers
         {
             if (ModelState.IsValid)
             {
-                bool isUserVerified = (_context.User?.Any(e => e.email == user.email)).GetValueOrDefault();
+                bool isUserVerified = userrepo.UserExistByEmail(user.email);
                 if (isUserVerified)
                 {
                     ViewBag.Message = "Sorry! This email is already registered";
                     return View("signup");
                 }
-                await (_context.User.AddAsync(user));
-                await _context.SaveChangesAsync();
+                
+                userrepo.createuser(user);
+
                 return RedirectToAction("login", "users");
             }
             return View();

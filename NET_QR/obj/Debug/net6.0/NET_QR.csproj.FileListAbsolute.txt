@@ -265,3 +265,4 @@ C:\Users\long play computers\source\repos\NET_QR\NET_QR\obj\Debug\net6.0\NET_QR.
 C:\Users\long play computers\source\repos\NET_QR\NET_QR\obj\Debug\net6.0\NET_QR.genruntimeconfig.cache
 C:\Users\long play computers\source\repos\NET_QR\NET_QR\obj\Debug\net6.0\ref\NET_QR.dll
 C:\Users\long play computers\source\repos\NET_QR\NET_QR\bin\Debug\net6.0\IronBarCode.dll
+C:\Users\long play computers\source\repos\NET_QR\NET_QR\bin\Debug\net6.0\libman.json

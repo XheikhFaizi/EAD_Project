@@ -10,7 +10,7 @@ namespace NET_QR.Models
         [Required(ErrorMessage = "Please Enter Name")]
         [StringLength(20)]
         public string name { get; set; }
-
+    
         [Required(ErrorMessage = "Please Enter Username")]
         [StringLength(20)]
         public string username { get; set; }
@@ -27,6 +27,8 @@ namespace NET_QR.Models
         public string pass { get; set; }
 
 
+
+        public string imagepath { get; set; }
         [Compare("pass", ErrorMessage = "Confirm password doesn't match, Type again!")]
         [Required(ErrorMessage = "Please Enter Password")]
         [DataType(DataType.Password)]

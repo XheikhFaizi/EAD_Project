@@ -1,20 +1,40 @@
 ﻿ <div class="panel" id="six-panel">
-         <br><br>
+        
+ @if (ViewBag.Qr != null)
+{
+    <br><br>
+    <div class="panel-title">Click on QR to Download </div>
+    <br>
+    <a href="@ViewBag.Qr"  download>
+        <img src="@ViewBag.Qr" class="img-fluid animated"  width="300px" style="margin-left: 100px;" ></a>
+    <br>   <br>
+
+     <a href="@Url.Action("services","Home")">
+
+    <button class="btn-get-started scrollto" id = "sbtn" > Use Again</button>
+         </a>
+}
+else
+{
+     
+     
+     <br><br>
     <div class="panel-title">Create Qr to Send EMAIL </div>
       <br>
 
-   <form action="#">
+   <form id="emailform">
          
   <input type="email" class="form-control" id="mail" name="mail"   placeholder="Your Email" required>
   <br>
   
   <input type="text" class="form-control" id="subject" name="subect"   placeholder="Enter Email Subject" required>
   <br />
-         <textarea class="form-control" name="message" rows="5" placeholder="Enter Your Message here" required></textarea>
+         <textarea class="form-control" name="body" id="body" rows="5" placeholder="Enter Your Message here" required></textarea>
 
          <br />
          
 
   <input class="btn-get-started scrollto" id = "sbtn"  type="submit">
 </form>
+}
 </div>

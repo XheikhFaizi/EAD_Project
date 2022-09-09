@@ -9,6 +9,8 @@ namespace NET_QR.Data
 {
     public class NET_QRContext : DbContext
     {
+
+
         public NET_QRContext (DbContextOptions<NET_QRContext> options)
             : base(options)
         {
