@@ -1,0 +1,123 @@
+﻿@{
+    ViewBag.Title = "Factory";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+}
+
+
+
+<main id="main">
+
+<h2 style="margin-top:120px;
+    margin-bottom:30px;
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 56px;
+    text-align: center;
+    color: #4e4039;">Get Your Custom QR Code</h2>
+
+<div class="warpper">
+
+  <input class="radio" id="one" name="group" type="radio" >
+  <input class="radio" id="two" name="group" type="radio">
+  <input class="radio" id="three" name="group" type="radio">
+  <input class="radio" id="four" name="group" type="radio" checked>
+  <input class="radio" id="five" name="group" type="radio">
+  <input class="radio" id="six" name="group" type="radio">
+ 
+ 
+ 
+  <div class="tabs">
+
+  <label class="tab" id="one-tab" for="one">URL</label>
+  <label class="tab" id="two-tab" for="two">Plain_Text</label>
+  <label class="tab" id="three-tab" for="three">Bitcoin</label>
+  <label class="tab" id="four-tab" for="four">WIFI</label>
+  <label class="tab" id="five-tab" for="five">SMS</label>
+  <label class="tab" id="six-tab" for="six">Email</label>
+
+  
+    </div>
+
+
+  <div class="panels">
+
+         
+        @await Component.InvokeAsync("FactoryUrlQr")
+       
+
+         
+        @await Component.InvokeAsync("FactoryTextQr")
+
+        @await Component.InvokeAsync("FactoryBitcoinQr")
+        
+        @await Component.InvokeAsync("FactoryWifiQr")
+        
+        @await Component.InvokeAsync("FactorySmsQr")
+     
+        @await Component.InvokeAsync("FactoryEmailQr")
+        
+
+
+
+
+</div>
+</div>
+
+
+<!-- $$$$$$$$$$$$$$$$$$$ TIMELINE $$$$$$$$$$$$$$$$$$$-->
+ <section id="services" class="services ">
+   <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>How To Use</h2>
+          <p>Check out these steps to create your own custom QR</p>
+        </div>
+
+   <div class="timeline">
+		
+	    <div class="timeline-row">
+			<div class="timeline-time">
+                STEP 1
+                <small style="color:black;">Choose which one you want to create</small>
+			</div>
+
+			<div class="timeline-content">
+				<img src="/images/step1.gif" width="350px"/>
+			</div>
+		</div>
+
+
+		<div class="timeline-row">
+            <div class="timeline-time">
+                STEP 2
+                <small style="color:black;">Add your data you wana add</small>
+			</div>
+			<div class="timeline-content">
+			<img src="/images/step2.gif" width="350px"/>
+			</div>
+		</div>
+
+       
+	    <div class="timeline-row">
+			<div class="timeline-time">
+                STEP 3
+                <small style="color:black;">Click and download your Qr</small>
+			</div>
+
+			<div class="timeline-content">
+				<img src="/images/step3.gif" width="350px"/>
+			</div>
+		</div>
+
+	</div>
+</div>
+
+</section>
+
+<!-- $$$$$$$$$$$$$$$$$$$ TIMELINE $$$$$$$$$$$$$$$$$$$-->
+
+</main>
+
+
+<script src="/js/factoryurl.js" asp-append-version="true"> </script>

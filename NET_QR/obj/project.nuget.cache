@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "d89oKmcnHCAx8NyZBmF/tin31AQhSs9U1/KZ2p1hEP3Z/2vqNPvHYHbTn+UxaqSe/6SqimOE7OD+7tc1lJtAOw==",
+  "dgSpecHash": "rMWvSsBN1L8z8VR4oRwe7JSlQ1ez2FGoyojbDgIsHyiMBL4dtD6y8wMHX06gZTrmoJduTsOLBtf+Vg/znAD+mQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\long play computers\\source\\repos\\NET_QR\\NET_QR\\NET_QR.csproj",
   "expectedPackageFiles": [
@@ -23,6 +23,7 @@
     "C:\\Users\\long play computers\\.nuget\\packages\\microsoft.aspnetcore.http.extensions\\2.2.0\\microsoft.aspnetcore.http.extensions.2.2.0.nupkg.sha512",
     "C:\\Users\\long play computers\\.nuget\\packages\\microsoft.aspnetcore.http.features\\2.2.0\\microsoft.aspnetcore.http.features.2.2.0.nupkg.sha512",
     "C:\\Users\\long play computers\\.nuget\\packages\\microsoft.aspnetcore.razor.language\\6.0.0\\microsoft.aspnetcore.razor.language.6.0.0.nupkg.sha512",
+    "C:\\Users\\long play computers\\.nuget\\packages\\microsoft.aspnetcore.session\\2.2.0\\microsoft.aspnetcore.session.2.2.0.nupkg.sha512",
     "C:\\Users\\long play computers\\.nuget\\packages\\microsoft.aspnetcore.webutilities\\2.2.0\\microsoft.aspnetcore.webutilities.2.2.0.nupkg.sha512",
     "C:\\Users\\long play computers\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\5.0.0\\microsoft.bcl.asyncinterfaces.5.0.0.nupkg.sha512",
     "C:\\Users\\long play computers\\.nuget\\packages\\microsoft.build\\17.0.0\\microsoft.build.17.0.0.nupkg.sha512",

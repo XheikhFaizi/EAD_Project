@@ -2,23 +2,10 @@
   <div class="panel" id="three-panel">
 
 
-@if (ViewBag.Qr != null)
-{
-    <br><br>
-    <div class="panel-title">Click on QR to Download </div>
-    <br>
-    <a href="@ViewBag.Qr"  download>
-        <img src="@ViewBag.Qr" class="img-fluid animated"  width="300px" style="margin-left: 100px;" ></a>
-    <br>   <br>
+      
+<div id="bitcoinqrshow"></div>
 
-     <a href="@Url.Action("services","Home")">
 
-    <button class="btn-get-started scrollto" id = "sbtn" > Use Again</button>
-         </a>
-}
-
-else
-{
          <br><br>
     <div class="panel-title">Create QR for Crypto Payments </div>
       <br>
@@ -44,6 +31,6 @@ else
   <input class="btn-get-started scrollto" id = "sbtn"  type="submit">
 
     </form>
-  }
+  
 
     </div>

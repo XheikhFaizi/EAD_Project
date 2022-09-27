@@ -11,11 +11,13 @@ namespace NET_QR.Data
     {
 
 
-        public NET_QRContext (DbContextOptions<NET_QRContext> options)
-            : base(options)
+        public NET_QRContext (DbContextOptions<NET_QRContext> options) : base(options)
         {
         }
 
         public DbSet<NET_QR.Models.User> User { get; set; } = default!;
+
+
+        public DbSet<NET_QR.Models.UserQrRelation> UserQrRelation { get; set; } = default!;
     }
 }

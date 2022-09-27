@@ -21,11 +21,20 @@ namespace NET_QR.Controllers
     {
         private readonly NET_QRContext _context;
         private readonly InterfaceUser userrepo;
+        private IWebHostEnvironment Environment;
 
-        public UsersController(NET_QRContext context, InterfaceUser userrepot)
+        public UsersController(IWebHostEnvironment _environment, NET_QRContext context, InterfaceUser userrepot)
         {
             _context = context;
             userrepo = userrepot;
+            Environment = _environment;
+
+        }
+
+        public ViewResult factory()
+        {
+            return View();
+
         }
 
 
@@ -46,6 +55,7 @@ namespace NET_QR.Controllers
         // GET: Users
         public async Task<IActionResult> Index()
         {
+            _context.User.Find("email=sdasdasda");
               return _context.User != null ? 
                           View(await _context.User.ToListAsync()) :
                           Problem("Entity set 'NET_QRContext.User'  is null.");
@@ -179,7 +189,18 @@ namespace NET_QR.Controllers
             return RedirectToAction(nameof(Index));
         }
 
-        [HttpPost]
+
+
+
+        public ActionResult logout()
+        {
+            HttpContext.Session.Remove("User");
+            return RedirectToAction("Null", "Home");
+        }
+
+
+
+            [HttpPost]
         public ActionResult login(User user)
         {
             string key = "user";
@@ -190,17 +211,20 @@ namespace NET_QR.Controllers
                 bool isUserVerified = userrepo.Ifuserexist(user);
 
                 Console.WriteLine(isUserVerified);
+
                 if (isUserVerified)
                 {
+                 
+                 int session = _context.User.Where(x => x.email == user.email).Select(x => x.ID).FirstOrDefault();
+                 HttpContext.Session.SetString("User", session.ToString());
+
                 
-                
+                 CookieOptions ck = new CookieOptions();
+                 ck.Expires = DateTime.Now.AddDays(7);
+                 Response.Cookies.Append("User", session.ToString(), ck);
 
-
-                    CookieOptions ck = new CookieOptions();
-                    //////ck.Expires = DateTime.Now.AddDays(7);
-                    Response.Cookies.Append(key, value, ck);
-
-                    return RedirectToAction("Null", "Home");
+                 return RedirectToAction("Null", "Home");
+                 
                 }
             //}
             //else
@@ -228,8 +252,17 @@ namespace NET_QR.Controllers
                 
                 userrepo.createuser(user);
 
-                return RedirectToAction("login", "users");
+            string wwwPath = this.Environment.WebRootPath;
+            string fold = "Users/" + user.email;
+            string path = Path.Combine(wwwPath, fold);
+            if (!Directory.Exists(path))
+            {
+                Directory.CreateDirectory(path);
             }
+
+
+            return RedirectToAction("login", "users");
+        }
             return View();
         }
 

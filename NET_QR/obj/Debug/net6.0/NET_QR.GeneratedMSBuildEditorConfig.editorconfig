@@ -23,6 +23,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxjb250YWN0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/long play computers/source/repos/NET_QR/NET_QR/Views/Home/customizeqr.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxjdXN0b21pemVxci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/long play computers/source/repos/NET_QR/NET_QR/Views/Home/factory.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxmYWN0b3J5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/long play computers/source/repos/NET_QR/NET_QR/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -49,6 +57,34 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/long play computers/source/repos/NET_QR/NET_QR/Views/Shared/Components/EmailQr/Default.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcRW1haWxRclxEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/long play computers/source/repos/NET_QR/NET_QR/Views/Shared/Components/FactoryBitcoinQr/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcRmFjdG9yeUJpdGNvaW5RclxEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/long play computers/source/repos/NET_QR/NET_QR/Views/Shared/Components/FactoryEmailQr/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcRmFjdG9yeUVtYWlsUXJcRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/long play computers/source/repos/NET_QR/NET_QR/Views/Shared/Components/FactorySmsQr/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcRmFjdG9yeVNtc1FyXERlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/long play computers/source/repos/NET_QR/NET_QR/Views/Shared/Components/FactoryTextQr/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcRmFjdG9yeVRleHRRclxEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/long play computers/source/repos/NET_QR/NET_QR/Views/Shared/Components/FactoryUrlQr/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcRmFjdG9yeVVybFFyXERlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/long play computers/source/repos/NET_QR/NET_QR/Views/Shared/Components/FactoryWifiQr/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcRmFjdG9yeVdpZmlRclxEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/long play computers/source/repos/NET_QR/NET_QR/Views/Shared/Components/Qrshow/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcUXJzaG93XERlZmF1bHQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/long play computers/source/repos/NET_QR/NET_QR/Views/Shared/Components/SmsQr/Default.cshtml]
@@ -97,6 +133,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/long play computers/source/repos/NET_QR/NET_QR/Views/Users/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/long play computers/source/repos/NET_QR/NET_QR/Views/Users/factory.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcZmFjdG9yeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/long play computers/source/repos/NET_QR/NET_QR/Views/Users/Index.cshtml]

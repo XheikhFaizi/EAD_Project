@@ -53,6 +53,7 @@ namespace NET_QR.Models.Repositry
                 if (file.Length > 0)
                 {
                     path = Path.GetFullPath(Path.Combine(Environment.CurrentDirectory, "UploadedFiles"));
+
                     if (!Directory.Exists(path))
                     {
                         Directory.CreateDirectory(path);

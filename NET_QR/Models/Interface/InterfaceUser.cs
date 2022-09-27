@@ -10,5 +10,6 @@ namespace NET_QR.Models.Interface
         public Task<bool> createuser(User s);
 
         public Task<bool> UploadFile(IFormFile file);
+      
     }
 }

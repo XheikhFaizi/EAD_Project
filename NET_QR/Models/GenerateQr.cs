@@ -26,5 +26,10 @@
         public string amount { get; set; }
 
 
+
+        public string Color { get; set; }
+        public IEnumerable<IFormFile> file { get; set; }
+
+
     }
 }

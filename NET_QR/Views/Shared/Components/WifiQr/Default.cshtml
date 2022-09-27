@@ -1,23 +1,8 @@
 ﻿ <div class="panel" id="four-panel">
 
 
-
-     @if (ViewBag.Qr != null)
-{
-    <br><br>
-    <div class="panel-title">Click on QR to Download </div>
-    <br>
-    <a href="@ViewBag.Qr"  download>
-        <img src="@ViewBag.Qr" class="img-fluid animated"  width="300px" style="margin-left: 100px;" ></a>
-    <br>   <br>
-
-     <a href="@Url.Action("services","Home")">
-
-    <button class="btn-get-started scrollto" id = "sbtn" > Use Again</button>
-         </a>
-}
-else
-{
+     
+<div id="wifiqrshow"></div>
     
     <br><br>
     <div class="panel-title">Create Qr to Connect To Wifi </div>
@@ -45,5 +30,5 @@ else
 </form>
 
 
-}
+
 </div>

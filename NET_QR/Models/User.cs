@@ -1,4 +1,4 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿                            using System.ComponentModel.DataAnnotations;
 
 namespace NET_QR.Models
 {
@@ -28,7 +28,6 @@ namespace NET_QR.Models
 
 
 
-        public string imagepath { get; set; }
         [Compare("pass", ErrorMessage = "Confirm password doesn't match, Type again!")]
         [Required(ErrorMessage = "Please Enter Password")]
         [DataType(DataType.Password)]

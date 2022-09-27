@@ -11,19 +11,34 @@ builder.Services.AddDbContext<NET_QRContext>(options =>
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+
+
 builder.Services.AddTransient<InterfaceUser, UserRepositry>();
+builder.Services.AddTransient<InterfaceUserQrRelation, UserQrRelationRepositry>();
+
+
+
 builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+
+builder.Services.AddDistributedMemoryCache();
+builder.Services.AddSession(o => { o.IdleTimeout = TimeSpan.FromDays(5); });
+
+//builder.Services.AddSession(options => { options.IdleTimeout = TimeSpan.FromMinutes(1); } );
+
+builder.Services.AddMvc();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
 {
-    app.UseExceptionHandler("/Home/Error");
+    app.UseStatusCodePagesWithReExecute("/Error/{0}");
+    //app.UseExceptionHandler("/Home/Error");
 }
 app.UseStaticFiles();
 
 app.UseRouting();
-
+app.UseSession();
 app.UseAuthorization();
 
 app.MapControllerRoute(

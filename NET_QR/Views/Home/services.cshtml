@@ -24,7 +24,6 @@
   <input class="radio" id="four" name="group" type="radio" checked>
   <input class="radio" id="five" name="group" type="radio">
   <input class="radio" id="six" name="group" type="radio">
-   <input class="radio" id="seven" name="group" type="radio">
  
  
   <div class="tabs">
@@ -35,22 +34,18 @@
   <label class="tab" id="four-tab" for="four">WIFI</label>
   <label class="tab" id="five-tab" for="five">SMS</label>
   <label class="tab" id="six-tab" for="six">Email</label>
-  <label class="tab" id="seven-tab" for="seven">Image</label>
   
     </div>
 
 
   <div class="panels">
 
-      <div id="pol">    
+         
         @await Component.InvokeAsync("UrlQr")
-        </div>
+       
 
-
-        <div id="pol2">    
+         
         @await Component.InvokeAsync("TextQr")
-        </di>
-
 
         @await Component.InvokeAsync("BitcoinQr")
         
@@ -60,8 +55,6 @@
      
         @await Component.InvokeAsync("EmailQr")
         
-        @await Component.InvokeAsync("SocialQr")
-
 
 
 
@@ -123,3 +116,6 @@
 <!-- $$$$$$$$$$$$$$$$$$$ TIMELINE $$$$$$$$$$$$$$$$$$$-->
 
 </main>
+
+
+<script src="/js/url.js" asp-append-version="true"> </script>

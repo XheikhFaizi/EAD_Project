@@ -2,23 +2,9 @@
 
   <div class="panel" id="one-panel">
 
+      
+<div id="urlqrshow"></div>
 
-@if (ViewBag.Qr != null)
-{
-    <br><br>
-    <div class="panel-title">Click on QR to Download </div>
-    <br>
-    <a href="@ViewBag.Qr"  download>
-        <img src="@ViewBag.Qr" class="img-fluid animated"  width="300px" style="margin-left: 100px;" ></a>
-    <br>   <br>
-
-     <a href="@Url.Action("services","Home")">
-
-    <button class="btn-get-started scrollto" id = "sbtn" > Use Again</button>
-         </a>
-}
-else
-{
     <br /><br />
     
     <div class="panel-title">Create URL to QR Code </div>
@@ -33,7 +19,7 @@ else
 
 
 
-}
+
 </div>
 
 

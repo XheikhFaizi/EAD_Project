@@ -9,6 +9,7 @@ using System.Drawing;
 using NET_QR.Models.Repositry;
 using NET_QR.Models.Interface;
 using NET_QR.Data;
+using System.Net.Http.Headers;
 
 namespace NET_QR.Controllers
 {
@@ -16,17 +17,537 @@ namespace NET_QR.Controllers
     {
         private readonly NET_QRContext _context;
         private IWebHostEnvironment Environment;
-        private readonly InterfaceUser userrepo;
+        //private readonly InterfaceUser userrepo;
+        private readonly InterfaceUserQrRelation userqrrepo;
 
-        public HomeController(IWebHostEnvironment _environment, NET_QRContext context)
+        public HomeController(InterfaceUserQrRelation userop ,IWebHostEnvironment _environment, NET_QRContext context)
         {
+            userqrrepo = userop;
             _context = context;
             Environment = _environment;
+        
         }
     
         List<User> userslist = new List<User>();
-       
 
+
+        //////////////*********************************************************************
+
+       
+        public ActionResult factorycreateurlqr(IFormFile file , string URL ,string Color)
+        {
+            string wwwPath = this.Environment.WebRootPath;
+
+            var userid = this.HttpContext.Session.GetString("User");
+
+            int hh = int.Parse(userid);
+
+            string mail = _context.User.Where(x => x.ID == hh).Select(x => x.email).FirstOrDefault();
+
+
+            string userpath1 = Path.Combine(this.Environment.WebRootPath, "Users");
+            string userpath2 = Path.Combine(userpath1, mail);
+
+            GeneratedBarcode barcode = null;
+
+            if (file != null)
+            {
+                var filesourceName = file.FileName.Trim('"');
+
+                string userpath3 = Path.Combine(userpath2, "Logos");
+
+                if (!Directory.Exists(userpath3))
+                {
+                    Directory.CreateDirectory(userpath3);
+                }
+                var pathWithFileName = Path.Combine(userpath3, filesourceName);
+                using (FileStream stream = new FileStream(pathWithFileName, FileMode.Create))
+                {
+                    file.CopyTo(stream);
+
+                    stream.Close();
+
+                }
+
+
+
+                string filePath = pathWithFileName.ToString();
+               barcode = QRCodeWriter.CreateQrCodeWithLogo(URL, filePath, 350);
+
+      
+
+
+            }
+            else
+            {
+                barcode = QRCodeWriter.CreateQrCode(URL, 350);
+            }
+
+
+            barcode.SetMargins(10);
+
+            //////////ADDING COLOR
+            string hex = Color;
+            Color _color = System.Drawing.ColorTranslator.FromHtml(hex);
+            barcode.ChangeBarCodeColor(_color);
+
+            string mypath3 = Path.Combine(userpath2, "Qrs");
+            string name = System.DateTime.Now.ToString("ddMMyyhhmmss") + ".png";
+            string filePaths = Path.Combine(mypath3, name);
+            barcode.SaveAsPng(filePaths);
+            string fileName = Path.GetFileName(filePaths);
+
+
+            UserQrRelation qrRelation = new UserQrRelation();
+            qrRelation.userid = hh;
+            qrRelation.name = "Url Qr";
+            string imagepath = "~/Users/" + mail + "/Qrs/" + fileName;
+
+            Console.WriteLine(imagepath);
+
+            qrRelation.imagepath=imagepath;
+
+            userqrrepo.addrelation(qrRelation);
+
+            ViewBag.Qr = "/Users/" + mail + "/Qrs/" + name;
+
+            return ViewComponent("Qrshow");
+
+        }
+
+        public ActionResult factorycreatetextqr(IFormFile file, string TEXT, string Color)
+        {
+            string wwwPath = this.Environment.WebRootPath;
+
+            var userid = this.HttpContext.Session.GetString("User");
+
+            int hh = int.Parse(userid);
+
+            string mail = _context.User.Where(x => x.ID == hh).Select(x => x.email).FirstOrDefault();
+
+
+            string userpath1 = Path.Combine(this.Environment.WebRootPath, "Users");
+            string userpath2 = Path.Combine(userpath1, mail);
+
+            GeneratedBarcode barcode = null;
+
+            if (file != null)
+            {
+                var filesourceName = file.FileName.Trim('"');
+
+                string userpath3 = Path.Combine(userpath2, "Logos");
+
+                if (!Directory.Exists(userpath3))
+                {
+                    Directory.CreateDirectory(userpath3);
+                }
+                var pathWithFileName = Path.Combine(userpath3, filesourceName);
+
+
+                using (FileStream stream = new FileStream(pathWithFileName, FileMode.Create))
+                {
+                    file.CopyTo(stream);
+                    stream.Close();
+
+                }
+
+
+                string filePath = pathWithFileName.ToString();
+                barcode = QRCodeWriter.CreateQrCodeWithLogo(TEXT, filePath, 350);
+
+
+
+
+            }
+            else
+            {
+                barcode = QRCodeWriter.CreateQrCode(TEXT, 350);
+            }
+
+
+            barcode.SetMargins(10);
+
+            //////////ADDING COLOR
+            string hex = Color;
+            Color _color = System.Drawing.ColorTranslator.FromHtml(hex);
+            barcode.ChangeBarCodeColor(_color);
+
+            string mypath3 = Path.Combine(userpath2, "Qrs");
+            string name = System.DateTime.Now.ToString("ddMMyyhhmmss") + ".png";
+            string filePaths = Path.Combine(mypath3, name);
+            barcode.SaveAsPng(filePaths);
+            string fileName = Path.GetFileName(filePaths);
+
+
+            UserQrRelation qrRelation = new UserQrRelation();
+            qrRelation.userid = hh;
+            qrRelation.name = "TEXT Qr";
+            string imagepath = "~/Users/" + mail + "/Qrs/" + fileName;
+
+            Console.WriteLine(imagepath);
+
+            qrRelation.imagepath = imagepath;
+
+            userqrrepo.addrelation(qrRelation);
+
+            ViewBag.Qr = "/Users/" + mail + "/Qrs/" + name;
+
+            return ViewComponent("Qrshow");
+
+        }
+
+
+        public ActionResult factorycreatewifiqr(IFormFile file, string network, string Color,string password,string type)
+        {
+            string wwwPath = this.Environment.WebRootPath;
+
+            var userid = this.HttpContext.Session.GetString("User");
+
+
+            string line = "WIFI:S:" + network + ";T:" + type + ";P:" + password + ";H:false;;";
+
+            int hh = int.Parse(userid);
+
+            string mail = _context.User.Where(x => x.ID == hh).Select(x => x.email).FirstOrDefault();
+
+
+            string userpath1 = Path.Combine(this.Environment.WebRootPath, "Users");
+            string userpath2 = Path.Combine(userpath1, mail);
+
+            GeneratedBarcode barcode = null;
+
+            if (file != null)
+            {
+                var filesourceName = file.FileName.Trim('"');
+
+                string userpath3 = Path.Combine(userpath2, "Logos");
+
+                if (!Directory.Exists(userpath3))
+                {
+                    Directory.CreateDirectory(userpath3);
+                }
+                var pathWithFileName = Path.Combine(userpath3, filesourceName);
+
+
+                using (FileStream stream = new FileStream(pathWithFileName, FileMode.Create))
+                {
+                    file.CopyTo(stream);
+                    stream.Close();
+
+                }
+
+
+                string filePath = pathWithFileName.ToString();
+                barcode = QRCodeWriter.CreateQrCodeWithLogo(line, filePath, 350);
+
+
+
+
+            }
+            else
+            {
+                barcode = QRCodeWriter.CreateQrCode(line , 350);
+            }
+
+
+            barcode.SetMargins(10);
+
+            //////////ADDING COLOR
+            string hex = Color;
+            Color _color = System.Drawing.ColorTranslator.FromHtml(hex);
+            barcode.ChangeBarCodeColor(_color);
+
+            string mypath3 = Path.Combine(userpath2, "Qrs");
+            string name = System.DateTime.Now.ToString("ddMMyyhhmmss") + ".png";
+            string filePaths = Path.Combine(mypath3, name);
+            barcode.SaveAsPng(filePaths);
+            string fileName = Path.GetFileName(filePaths);
+
+
+            UserQrRelation qrRelation = new UserQrRelation();
+            qrRelation.userid = hh;
+            qrRelation.name = "Wifi Qr";
+            string imagepath = "~/Users/" + mail + "/Qrs/" + fileName;
+
+            Console.WriteLine(imagepath);
+
+            qrRelation.imagepath = imagepath;
+
+            userqrrepo.addrelation(qrRelation);
+
+            ViewBag.Qr = "/Users/" + mail + "/Qrs/" + name;
+
+            return ViewComponent("Qrshow");
+
+        }
+
+
+        public ActionResult factorycreatebitcoinqr(IFormFile file, string coin, string Color, string account, string amount)
+        {
+            string wwwPath = this.Environment.WebRootPath;
+
+            var userid = this.HttpContext.Session.GetString("User");
+
+
+            string line = coin + ":" + account + "?amount=" + amount;
+
+            int hh = int.Parse(userid);
+
+            string mail = _context.User.Where(x => x.ID == hh).Select(x => x.email).FirstOrDefault();
+
+
+            string userpath1 = Path.Combine(this.Environment.WebRootPath, "Users");
+            string userpath2 = Path.Combine(userpath1, mail);
+
+            GeneratedBarcode barcode = null;
+
+            if (file != null)
+            {
+                var filesourceName = file.FileName.Trim('"');
+
+                string userpath3 = Path.Combine(userpath2, "Logos");
+
+                if (!Directory.Exists(userpath3))
+                {
+                    Directory.CreateDirectory(userpath3);
+                }
+                var pathWithFileName = Path.Combine(userpath3, filesourceName);
+
+
+                using (FileStream stream = new FileStream(pathWithFileName, FileMode.Create))
+                {
+                    file.CopyTo(stream);
+                    stream.Close();
+
+                }
+
+
+                string filePath = pathWithFileName.ToString();
+                barcode = QRCodeWriter.CreateQrCodeWithLogo(line, filePath, 350);
+
+
+
+
+            }
+            else
+            {
+                barcode = QRCodeWriter.CreateQrCode(line, 350);
+            }
+
+
+            barcode.SetMargins(10);
+
+            //////////ADDING COLOR
+            string hex = Color;
+            Color _color = System.Drawing.ColorTranslator.FromHtml(hex);
+            barcode.ChangeBarCodeColor(_color);
+
+            string mypath3 = Path.Combine(userpath2, "Qrs");
+            string name = System.DateTime.Now.ToString("ddMMyyhhmmss") + ".png";
+            string filePaths = Path.Combine(mypath3, name);
+            barcode.SaveAsPng(filePaths);
+            string fileName = Path.GetFileName(filePaths);
+
+
+            UserQrRelation qrRelation = new UserQrRelation();
+            qrRelation.userid = hh;
+            qrRelation.name = "Crypto Qr";
+            string imagepath = "~/Users/" + mail + "/Qrs/" + fileName;
+
+            Console.WriteLine(imagepath);
+
+            qrRelation.imagepath = imagepath;
+
+            userqrrepo.addrelation(qrRelation);
+
+            ViewBag.Qr = "/Users/" + mail + "/Qrs/" + name;
+
+            return ViewComponent("Qrshow");
+
+        }
+
+
+
+        public ActionResult factorycreatesmsqr(IFormFile file, string num, string Color, string sms)
+        {
+            string wwwPath = this.Environment.WebRootPath;
+
+            var userid = this.HttpContext.Session.GetString("User");
+
+
+            string line = "SMSTO:" + num + ":" + sms;
+
+            int hh = int.Parse(userid);
+
+            string mail = _context.User.Where(x => x.ID == hh).Select(x => x.email).FirstOrDefault();
+
+
+            string userpath1 = Path.Combine(this.Environment.WebRootPath, "Users");
+            string userpath2 = Path.Combine(userpath1, mail);
+
+            GeneratedBarcode barcode = null;
+
+            if (file != null)
+            {
+                var filesourceName = file.FileName.Trim('"');
+
+                string userpath3 = Path.Combine(userpath2, "Logos");
+
+                if (!Directory.Exists(userpath3))
+                {
+                    Directory.CreateDirectory(userpath3);
+                }
+                var pathWithFileName = Path.Combine(userpath3, filesourceName);
+
+
+                using (FileStream stream = new FileStream(pathWithFileName, FileMode.Create))
+                {
+                    file.CopyTo(stream);
+                    stream.Close();
+
+                }
+
+
+                string filePath = pathWithFileName.ToString();
+                barcode = QRCodeWriter.CreateQrCodeWithLogo(line, filePath, 350);
+
+
+            }
+            else
+            {
+                barcode = QRCodeWriter.CreateQrCode(line, 350);
+            }
+
+
+            barcode.SetMargins(10);
+
+            //////////ADDING COLOR
+            string hex = Color;
+            Color _color = System.Drawing.ColorTranslator.FromHtml(hex);
+            barcode.ChangeBarCodeColor(_color);
+
+            string mypath3 = Path.Combine(userpath2, "Qrs");
+            string name = System.DateTime.Now.ToString("ddMMyyhhmmss") + ".png";
+            string filePaths = Path.Combine(mypath3, name);
+            barcode.SaveAsPng(filePaths);
+            string fileName = Path.GetFileName(filePaths);
+
+
+            UserQrRelation qrRelation = new UserQrRelation();
+            qrRelation.userid = hh;
+            qrRelation.name = "Sms Qr";
+            string imagepath = "~/Users/" + mail + "/Qrs/" + fileName;
+
+            Console.WriteLine(imagepath);
+
+            qrRelation.imagepath = imagepath;
+
+            userqrrepo.addrelation(qrRelation);
+
+            ViewBag.Qr = "/Users/" + mail + "/Qrs/" + name;
+
+            return ViewComponent("Qrshow");
+
+        }
+
+
+        public ActionResult factorycreateemailqr(IFormFile file, string email, string Color, string subject,string body)
+        {
+            string wwwPath = this.Environment.WebRootPath;
+
+            var userid = this.HttpContext.Session.GetString("User");
+
+
+            string line = "MATMSG:TO:" + email + ";SUB:" + subject + ";BODY:" + body + ";;";
+
+            int hh = int.Parse(userid);
+
+            string mail = _context.User.Where(x => x.ID == hh).Select(x => x.email).FirstOrDefault();
+
+
+            string userpath1 = Path.Combine(this.Environment.WebRootPath, "Users");
+            string userpath2 = Path.Combine(userpath1, mail);
+
+            GeneratedBarcode barcode = null;
+
+            if (file != null)
+            {
+                var filesourceName = file.FileName.Trim('"');
+
+                string userpath3 = Path.Combine(userpath2, "Logos");
+
+                if (!Directory.Exists(userpath3))
+                {
+                    Directory.CreateDirectory(userpath3);
+                }
+                var pathWithFileName = Path.Combine(userpath3, filesourceName);
+
+
+                using (FileStream stream = new FileStream(pathWithFileName, FileMode.Create))
+                {
+                    file.CopyTo(stream);
+                    stream.Close();
+
+                }
+
+
+                string filePath = pathWithFileName.ToString();
+                barcode = QRCodeWriter.CreateQrCodeWithLogo(line, filePath, 350);
+
+
+
+
+            }
+            else
+            {
+                barcode = QRCodeWriter.CreateQrCode(line, 350);
+            }
+
+
+            barcode.SetMargins(10);
+
+            //////////ADDING COLOR
+            string hex = Color;
+            Color _color = System.Drawing.ColorTranslator.FromHtml(hex);
+            barcode.ChangeBarCodeColor(_color);
+
+            string mypath3 = Path.Combine(userpath2, "Qrs");
+            string name = System.DateTime.Now.ToString("ddMMyyhhmmss") + ".png";
+            string filePaths = Path.Combine(mypath3, name);
+            barcode.SaveAsPng(filePaths);
+            string fileName = Path.GetFileName(filePaths);
+
+
+            UserQrRelation qrRelation = new UserQrRelation();
+            qrRelation.userid = hh;
+            qrRelation.name = "Email Qr";
+            string imagepath = "~/Users/" + mail + "/Qrs/" + fileName;
+
+            Console.WriteLine(imagepath);
+
+            qrRelation.imagepath = imagepath;
+
+            userqrrepo.addrelation(qrRelation);
+
+            ViewBag.Qr = "/Users/" + mail + "/Qrs/" + name;
+
+            return ViewComponent("Qrshow");
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+        //////////////*********************************************************************
         public IActionResult AjaxUpload(List<IFormFile> files)
         { 
             string wwwPath = this.Environment.WebRootPath;
@@ -79,7 +600,7 @@ namespace NET_QR.Controllers
 
             ViewBag.Qr = "/GeneratedQrs/CryptoQrCode.png";
 
-            return ViewComponent("BitcoinQr");
+            return ViewComponent("Qrshow");
 
         }
 
@@ -118,7 +639,7 @@ namespace NET_QR.Controllers
 
             ViewBag.Qr = "/GeneratedQrs/EmailQrCode.png";
 
-            return ViewComponent("EmailQr");
+            return ViewComponent("Qrshow");
 
         }
 
@@ -162,7 +683,7 @@ namespace NET_QR.Controllers
 
             ViewBag.Qr = "/GeneratedQrs/SmsQrCode.png";
 
-            return ViewComponent("SmsQr");
+            return ViewComponent("Qrshow");
 
         }
 
@@ -198,7 +719,7 @@ namespace NET_QR.Controllers
 
             ViewBag.Qr = "/GeneratedQrs/WifiQrCode.png";
 
-            return ViewComponent("WifiQr");
+            return ViewComponent("Qrshow");
 
         }
 
@@ -228,7 +749,7 @@ namespace NET_QR.Controllers
 
             ViewBag.Qr = "/GeneratedQrs/TextQrCode.png";
 
-            return ViewComponent("TextQr");
+            return ViewComponent("Qrshow");
 
         }
 
@@ -241,6 +762,11 @@ namespace NET_QR.Controllers
             //barcode.AddBarcodeValueTextBelowBarcode();
             // Styling a QR code and adding annotation text
             barcode.SetMargins(10);
+            //string hex = "#FF3FF3";
+            //Color _color = System.Drawing.ColorTranslator.FromHtml(hex);
+            //barcode.ChangeBarCodeColor(_color);
+
+            //Console.WriteLine(_color);
 
             string path = Path.Combine(this.Environment.WebRootPath, "GeneratedQrs");
             if (!Directory.Exists(path))
@@ -257,194 +783,87 @@ namespace NET_QR.Controllers
 
             ViewBag.Qr = "/GeneratedQrs/UrlQrCode.png";
 
-            return ViewComponent("UrlQr");
+            return ViewComponent("Qrshow");
 
         }
 
-        [HttpPost]
-        public async Task<ActionResult> ImageUploading(IFormFile file)
-        {
-            try
-            {
-                if (await userrepo.UploadFile(file))
-                {
-                    ViewBag.Message = "File Upload Successful";
-                }
-                else
-                {
-                    ViewBag.Message = "File Upload Failed";
-                }
-            }
-            catch (Exception ex)
-            {
-                //Log ex
-                ViewBag.Message = "File Upload Failed";
-            }
-            return View();
-        }
+        //////////////*********************************************************************
 
 
 
 
-        //private void FetchData()
+        //[HttpPost]
+        //public async Task<ActionResult> ImageUploading(IFormFile file)
         //{
-
-        //    string conString = @"Data Source=(localdb)\ProjectModels;Initial Catalog=PROJECT_DB;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
-        //    SqlConnection con = new SqlConnection(conString);
-        //    string query = $" select * from Users ";
-        //    con.Open();
-        //    SqlCommand cmd = new SqlCommand(query, con);
-        //    SqlDataReader dr;
-
-        //    if (userslist.Count > 0)
-        //    {
-        //        userslist.Clear();
-        //    }
         //    try
         //    {
-
-        //        dr = cmd.ExecuteReader();
-        //        while (dr.Read())
+        //        if (await userrepo.UploadFile(file))
         //        {
-        //            userslist.Add(new User()
-        //            {
-        //                name = dr["name"].ToString()
-        //            ,
-        //                username = dr["username"].ToString()
-        //            ,
-        //                email = dr["email"].ToString()
-        //            ,
-        //                pass = dr["pass"].ToString()
-        //            });
-        //        }
-        //        con.Close();
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        throw ex;
-        //    }
-        //}
-
-
-        //////////Return NULL DEFAULT VIEW
-        public ViewResult Null()
-        {
-            return View();
-        }
-
-        //////////Return About DEFAULT VIEW
-        public ViewResult about()
-        {
-            return View();
-        
-        }
-
-
-
-
-        //////////Return Services DEFAULT VIEW
-        public ViewResult services()
-        {
-           return View();
-
-        }
-
-
-        //////////Return Pricing DEFAULT VIEW
-        public ViewResult pricing()
-        {
-            return View();
-
-
-        }
-
-        //////////Return Services DEFAULT VIEW
-        public ViewResult contact()
-        {
-            return View();
-
-
-        }
-
-
-
-        ////////// Index View Home with data
-        //public ViewResult Index()
-        //{
-        //    FetchData();
-        //    return View(userslist);
-        //}
-
-
-
-
-        //////////// LOGIN POST
-        //[HttpPost]
-        //public ActionResult login(login ln)
-        //{
-
-        //    string conString = @"Data Source=(localdb)\ProjectModels;Initial Catalog=PROJECT_DB;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
-        //    SqlConnection con = new SqlConnection(conString);
-        //    string query = $" Select * from Users where (email = '{ln.log}' ) AND pass='{ln.pass}'";
-        //    SqlCommand cmd = new SqlCommand(query, con);
-
-
-
-        //    if (ModelState.IsValid)
-        //    {
-
-        //        con.Open();
-        //        SqlDataReader de = cmd.ExecuteReader();
-        //        if (de.HasRows)
-        //        {
-
-
-
-        //            return RedirectToAction("Index", "Home");
+        //            ViewBag.Message = "File Upload Successful";
         //        }
         //        else
         //        {
-
-
-        //            ViewBag.Message = "Sorry! You entered wrong credentials";
-        //            return View();
+        //            ViewBag.Message = "File Upload Failed";
         //        }
         //    }
-        //    else
+        //    catch (Exception ex)
         //    {
-        //        return View();
+        //        //Log ex
+        //        ViewBag.Message = "File Upload Failed";
         //    }
-
-
+        //    return View();
         //}
 
-
-
-
-        ////////// SIGNUP POST
         [HttpPost]
-        public ActionResult signup(string a)
+        public ViewResult factory(User gg)
         {
-
-            if (ModelState.IsValid)
-            {
-
-                //using (Project_DbContext db = new Project_DbContext())
-                //{
-
-                //    //db.Users.Add(S);
-
-                //}
-
-                return RedirectToAction("Login", "Home");
-
-
-            }
-            else
-            {
-                return View(a);
-            }
+            return View();
 
         }
+
+        public ViewResult Null()
+        {
+            return View();
+
+        }
+        public ViewResult About()
+        {
+            return View();
+
+        }
+
+        public ViewResult Services()
+        {
+            return View();
+
+        }
+
+        public ViewResult Contact ()
+        {
+            return View();
+
+        }
+
+        public ViewResult factory()
+        {
+            return View();
+
+        }
+
+        public ViewResult customizeqr()
+        {
+
+            var userid = this.HttpContext.Session.GetString("User");
+            int hh = 0;
+            if (userid !=null)
+            {
+
+                hh= int.Parse(userid);
+            }
+            return View(userqrrepo.getuserrelation(hh));
+
+        }
+
+
     }
 }
